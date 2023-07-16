@@ -1,6 +1,4 @@
 import logo from '../assets/desktop/logo.svg'
-import moon from '../assets/desktop/icon-moon.svg'
-import sun from '../assets/desktop/icon-sun.svg'
 import Image from 'next/image'
 import Link from 'next/link'
 
