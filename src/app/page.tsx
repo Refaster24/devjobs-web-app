@@ -1,11 +1,6 @@
 'use client'
 
-import { useAppDispatch, useAppSelector } from "@/components/redux-hook"
-
-import { storeState } from "../components/redux-hook"
-// import { filter } from "@/store/slice"
-// import { payloadType } from "@/store/types"
-import Header from "@/components/header"
+import { useAppSelector } from "@/components/redux-hook"
 import SearchBar from "@/components/searchBar"
 import DevJob from "@/components/devjob"
 
@@ -24,7 +19,7 @@ export default function Home() {
     <main className="text-white flex flex-col items-center">
       <h1 className="invisible absolute">devjob</h1>
       <SearchBar/>
-      <section className="grid mb-4 mx-4 gap-12 grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1">
+      <section className="grid mb-4 mx-4 gap-12 grid-flow-row auto-rows-fr grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1">
         {
           devJobs.map((job , id)=>{
             return <div key={id}> <DevJob id={job.id - 1}/> </div>

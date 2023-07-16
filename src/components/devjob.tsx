@@ -10,8 +10,8 @@ export default function DevJob({id}:{id:number}){
     const job = useAppSelector(state => state.sliced.global[id])
 
     return(
-        <Link href={`./${job.id}`}>
-        <article className="bg-[#19202d] rounded-xl px-12 py-8 space-y-3 flex flex-col relative">
+        <Link href={`./job-detail/${job.id}`}>
+        <article className="bg-[#19202d] h-full rounded-xl px-12 py-8 space-y-3 flex flex-col relative">
             <div style={{backgroundColor:job.logoBackground}}  className="p-2 rounded-xl absolute -top-4">
             <Image src={logo} alt={`${job.position}`} width={40} height={80}/>
             </div>
