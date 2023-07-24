@@ -108,10 +108,10 @@ function DesktopSearchBar(){
 
 export default function SearchBar(){
 
-    if(window == undefined) return null
 
     const [width,setWidth] = useState(window.innerWidth)
 
+    if(window == undefined) return null
     window.addEventListener('resize',()=>{
         setWidth(window.innerWidth)
     })
